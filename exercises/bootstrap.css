@@ -1,0 +1,8 @@
+.container {
+    background-color: yellowgreen;
+    padding: 20px;
+}
+.container-fluid {
+    background-color: yellow;
+    padding: 20px;
+}

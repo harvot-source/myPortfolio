@@ -1,0 +1,7 @@
+.flex-right {
+    display: flex;
+    flex-direction: row;
+}
+.height {
+    max-height: 50px;
+}

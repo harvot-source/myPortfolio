@@ -1,0 +1,38 @@
+.container {
+
+    text-align: center;
+}
+.bg-burlywood{
+    background-color: burlywood;
+}
+.bg-violet {
+    background-color: violet;
+}
+.bg-00FFCA {
+    background-color: #00FFCA;
+}
+.bg-05BFDB {
+    background-color: #05BFDB;
+}
+.bg-088395 {
+    background-color: #088395;
+}
+.bg-0A4D68 {
+    background-color: #0A4D68;
+}
+.bg-#EEEEEE {
+    background-color: #EEEEEE;
+}
+.bg-#AAD8D3 {
+    background-color: #AAD8D3;
+}
+.bg-00ADB5 {
+    background-color: #00ADB5;
+}
+.bg-393E46 {
+    background-color: #393E46;
+}
+
+.color {
+    color: white;
+}

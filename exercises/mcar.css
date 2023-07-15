@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.taxicar{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/attack1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;   
+}
+.highway
+{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(images/road2.jpg);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    z-index: 1;
+    animation: highway 8s linear infinite;   
+}
+@keyframes highway{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.car{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2; 
+    animation: moveCar 8s linear infinite; 
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+.wheel
+{
+    left: 50%;
+    bottom: 180px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    animation: moveCar 8s linear infinite;
+}
+.wheel img{
+    width: 72px;
+    height:72px;
+    animation: wheel 1s linear infinite;
+}
+.back-wheel{
+    left:-165px;
+    position: absolute;
+}
+.front-wheel{
+    left: 80px;
+    position: absolute;
+}
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg)
+    }
+}
+@keyframes moveCar {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100%);
+    }
+  }
+

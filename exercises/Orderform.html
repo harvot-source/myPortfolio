@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <style>
+        table, td, th{
+            border: 1px solid;
+         }
+         body{
+            background-image:url(i17.jpg);
+            background-repeat:repeat-y;
+            background-attachment: fixed;
+            background-size:cover;           
+            }
+        .select-button {
+         width: 175px; 
+        }
+    </style>
+</head>
+<body style="backgroumd-color:rgb(176, 176, 202)">
+    <h1 style="color:red">Land Of Boxes Order Form</h1>
+        <!--Form-->
+<form>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" size="22px" placeholder="Walaa Brody" />
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" size="22px" placeholder="w.brody@widget-sales.com" />
+    <br><br>
+    <label for="address">Address:</label>
+    <select name="city" id="city"  class="select-button" multiple>
+        <option value="162 Main Road"> 162 Main Road </option>
+        <option value="Rondebosch"> Rondebosch </option>
+        <option value="Cape Town"> Cape Town </option>
+    </select>
+    <br>
+    <label for="postcode">Postcode:</label>
+    <input type="text" name="postcode" id="postcode" size="10px" placeholder="7700" /><br><br>
+<br>
+         <!--Form&Table-->
+    <table>
+      <tr></tr>
+        <th>Product</th>
+        <th>Part Number</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Subtotal</th>
+     </tr> 
+        <tr>          
+            <td><label>EconoBox</label>&nbsp;&nbsp;</td>
+            <td><label for="lb100">LB100</label></td>
+            <td><input type="text" name="lb100" id="lb100" size="10px" placeholder="3" /></td>
+            <td><label for="r5">R5</label>
+            <td><input type="text" name="lb100" id="lb100" size="10px" placeholder="R15" /></td>           
+        </tr>
+        <tr>           
+            <td><label>Standard Box</label>&nbsp;&nbsp;</td>
+            <td><label for="lb200">LB200</label></td>
+            <td><input type="text" name="lb100" id="lb200" size="10px" placeholder="4" /></td>
+            <td><label for="r5">R10</label></td>
+            <td><input type="text" name="lb200" id="lb100" size="10px" placeholder="R40" /></td>           
+     </tr>
+     <tr>             
+            <td><label>Premium Box/TD</label>&nbsp;&nbsp;</td>
+            <td><label for="lb300">LB300</label></td>
+            <td><input type="figures" name="lb300" id="lb300" size="10px" placeholder="1" /></td>
+            <td><label for="r5">R15</label></td>
+            <td><input type="figures" name="lb100" id="lb300" size="10px" placeholder="R15" /></td>              
+    </tr>
+    <tr>                 
+            <td><label>Deluxe Box/TD></label>&nbsp;&nbsp;</td>
+            <td> <label for="deluxe">LB400</label></td>
+            <td> <input type="text" name="lb400" id="lb400" size="10px" placeholder="0" /></td>
+            <td> <label for="r5">R20</label></td>
+            <td> <input type="text" name="lb100" id="lb100" size="10px"/></td>                 
+    </tr>
+    <tr>                     
+            <td><label>Super Deluxe Box/TD></label>&nbsp;&nbsp; </td>
+            <td> <label for="lb500">LB500</label> </td>
+            <td> <input type="text" name="lb500" id="lb500" size="10px" placeholder="1" /> </td>
+            <td> <label for="r5">R30</label> </td>
+            <td><input type="text" name="lb500" id="lb500" size="10px" placeholder="R30" /> </td>                    
+    </tr>
+    <tr>
+            <td colspan="5" style="text-align: right;">
+                <label>Total</label>
+                <input type="total" name="total" id="total" size="10px" placeholder="R100" />
+            </td>
+    </tr>       
+</table>
+    <br>
+             <!-- Form -->
+        <h3 style="color:rgb(8, 8, 8)">Credit Card Details</h3>
+        <form>
+        <label>Card Type:</label>
+        <br>           
+        <input type="radio" name="card" id="cardtype" >Mastercard&nbsp;&nbsp;&nbsp;
+        <label for="cardtype">Card Number:</label>
+        <input type="number" name="cardnumber" id="cardnumber" size="20px" placeholder="45645" /><br>
+        <input type="radio" name="card" id="visa">Visa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="expiry_date">Expiry date:</label>&nbsp;&nbsp;&nbsp;
+        <input type="cardtype" name="expirydate" id="expirydate" size="10px" placeholder="03/99" /><br>
+        <input type="radio" name="card" id="americanexpress">American Express<br>
+        <input type="radio" name="card" id="dinersClub">Diners Club
+        <br>
+        <label for="address">Delivery Address:</label>    
+        <select name="city" id="city"  class="select-button" multiple>
+            <option value="162 Main Road">162 Main Road</option>
+            <option value="Rondebosch">Rondebosch</option>
+            <option value="Cape Town">Cape Town</option>
+        </select>
+        <br><br> <br><br>
+        <input type="submit" name="submit" value="Send order" />
+        <input type="reset" name="reset" value="Clear form" />   
+     </form>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes opacity{
+  0%{
+    opacity: 1;
+  }
+  99%{
+    opacity: 0;
+  }
+  100%{
+    display: none;
+  }
+}
+
+/* General Declaration */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Sans-Serif;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+/* Form Style */
+form{
+  width: 60%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.input-section{
+  width: 100%;
+  position: relative;
+}
+
+/* H1 */
+.input-section h1{
+  padding-left: 0.3em;
+  margin-bottom: 0.5em;
+  color: #b4b4b4;
+  font-size: 1.3em;
+  line-height: 1em;
+  text-align: left;
+  text-shadow: 0 1px 2px #00000024;
+  border-left: 5px solid #b4b4b4;
+  transition: all 300ms ease-in-out 
+  ;
+}
+
+
+/* Input && Textarea Styles*/
+.input-section input, textarea{
+  width: 100%;
+  height: 3em;
+  padding: 0 1em;
+  border: 2.5px solid #b4b4b4;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px #00000024;
+  text-shadow: 0 1px 2px #00000024;
+  outline: none;
+  transition: all 300ms ease-in-out;
+}
+
+.input-section textarea{
+  height: 5em;
+  padding: 0.5em 1em 1em 1em;
+  overflow: hidden;
+}
+
+.input-section label{
+  color: #b4b4b4;
+  font-size: 0.85em;
+  font-weight: 450;
+  text-shadow: 0 1px 2px #00000024;
+  cursor: text;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  transition: all 300ms ease-in-out;
+}
+
+.input-section textarea + label{
+  position: absolute;
+  top: 1.45em;
+}
+
+/* Submit Button */
+#submit-section{
+  display: flex;
+  justify-content: center;
+}
+
+#submit-section button{
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: 450;
+  box-shadow: 0 1px 2px #00000024;
+  background: #b4b4b4;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45em 1.5em;
+  transition: all 300ms ease-in-out;
+  outline: none;
+}
+/* added */
+button:hover {
+  color: hotpink;
+  background-color: antiquewhite;
+  box-shadow: 5px  #cb92e5 ;
+}
+
+/*============= Animations =============== */
+
+input:hover + label,
+textarea:hover + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label{
+  padding: 0 3px;
+  font-size: 0.7em;
+  color: #cb92e5;
+  background: #fff;
+  transform: translateY(-2.5em);
+} 
+
+textarea:hover + label,
+textarea:not(:placeholder-shown) + label{
+  transform: translateY(-2em);
+}
+
+/* ========================== End of Animations ============== */
+input:hover,
+textarea:hover,
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown){
+  color: #cb92e5;
+  border-color: #cb92e5;
+}
+
+/* form:valid > .input-section > h1{
+  color: #cb92e5;
+  border-color: #cb92e5;
+}
+
+form:valid > #submit-section > button{
+  background: #cb92e5;
+} */

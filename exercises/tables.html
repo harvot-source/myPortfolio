@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+   
+    <style>
+        table,th {
+            border:7px solid; color: darkgreen;
+            border-collapse:collapse;
+            padding: 15px;
+            width: 500px;
+        }
+        td{
+            border: 1px solid green;
+            padding: 15px;
+            background-color: blanchedalmond;
+        }
+        th{
+            text-align: center;
+            height: 40px;
+            background-color: azure;          
+        }
+        .all-cell-1 {
+            background-color: yellow;
+        }
+        .all-cell-3{
+            background-color: rgb(237, 237, 218);
+        }
+        .studentinfoheader {
+            background-color:rgb(250, 250, 185);
+        }
+        .Contacts {
+            background-color: rgb(175, 232, 173);
+        }
+    </style>
+
+</head>
+<body>
+        <!-- First Table-->
+    <!-- <table border="1" cellpadding="10" cellspacing="10px"> -->
+       <table class="table-class" id="table-id">
+        <caption>
+            This is Table 1
+        </caption>
+        <thead>
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="all-cell-1">Row 1, cell 1</td>
+                <td>Row 2, cell 2</td>
+                <td class="all-cell-3">Row 1, cell 3</td>
+            </tr>
+            <tr>
+                <td class="all-cell-1">Row 2, cell 1</td>
+                <td>Row 2, cell 2</td>
+                <td class="all-cell-3">Row 2, cell 3</td>
+            </tr>
+            <tr>
+                <td class="all-cell-1">Row 3, cell 1</td>
+                <td>Row 3, cell 2</td>
+                <td class="all-cell-3">Row 3, cell 3</td>
+            </tr>
+            <tr>
+                <td class="all-cell-1">Row 4,cell 1</td>
+                <td>Row 4,cell 2</td>
+                <td class="all-cell-3">Row 4,cell 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>tfoot 1</td>
+                <td>tfoot 2</td>
+                <td>tfoot 3</td>
+            </tr>
+        </tfoot>
+    </table>    <br>
+                <!--2nd Table-->
+    <table>
+        <caption>Student Information</caption>
+        <thead>
+            <tr>
+                <th class="studentinfoheader">Name</th>
+                <th class="studentinfoheader">Math</th>
+                <th class="studentinfoheader">Science</th>
+                <th class="studentinfoheader">English</th>
+                <th class="studentinfoheader">Physics</th>
+                <th class="studentinfoheader">General Knowledge</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Duterte A</td>
+                <td>71</td>
+                <td>71</td>
+                <td>73</td>
+                <td>74</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>Duterte B</td>
+                <td>76</td>
+                <td>77</td>
+                <td>78</td>
+                <td>79</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Duterte C</td>
+                <td>91</td>
+                <td>92</td>
+                <td>93</td>
+                <td>94</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Duterte D</td>
+                <td>96</td>
+                <td>97</td>
+                <td>98</td>
+                <td>99</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>Duterte E</td>
+                <td>75</td>
+                <td>75</td>
+                <td>75</td>
+                <td>75</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>Duterte F</td>
+                <td>80</td>
+                <td>81</td>
+                <td>82</td>
+                <td>83</td>
+                <td>84</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <table>
+        <caption>Contacts</caption>
+        <thead>
+            <tr>
+                <th class="Contacts" rowspan="2">Name</th>
+                <th Class="Contacts" colspan="3">Contact numbers</th>
+            <tr>
+                    <th class="Contacts">Smart</th>
+                    <th class="Contacts">Globe</th>
+                    <th class="Contacts">Landline</th>
+            </tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Duterte A</td>
+                <td>09898989898</td>
+                <td>09888877765</td>
+                <td>88887777</td>
+            </tr>
+            <tr>
+                <td>Duterte B</td>
+                <td>09898989898</td>
+                <td>09888877765</td>
+                <td>88887777</td>
+            </tr>
+            <tr>
+                <td>Duterte C</td>
+                <td>09898989898</td>
+                <td>09888877765</td>
+                <td>88887777</td>
+            </tr>
+            <tr>
+                <td>Duterte D</td>
+                <td>09898989898</td>
+                <td>09888877765</td>
+                <td>88887777</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+</body>
+</html>
