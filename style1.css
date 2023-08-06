@@ -516,6 +516,18 @@ img {
     width: 40%;
     border-radius:0%;
 }
+.widthHeight2{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    
+   
+    height: 30%;
+    width: 30%;
+    border-radius:0%;
+}
 /* ======================== */
 
 .container {
@@ -622,6 +634,11 @@ img {
     0 0  30px #ff0000,
     0 0  50px  #ff0000;
 
+}
+.other {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
