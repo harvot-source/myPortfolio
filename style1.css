@@ -528,6 +528,16 @@ img {
     width: 30%;
     border-radius:0%;
 }
+.laravel {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    height: 30%;
+    width: 30%;
+    border-radius:0%;
+}
 /* ======================== */
 
 .container {
