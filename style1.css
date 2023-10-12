@@ -1038,8 +1038,10 @@ form:valid > #submit-section > button{
         transition-delay: .25s;
     }
     .navbar a {
-        display: block;
-        font-size: 2rem;
+        display:flex;
+       justify-content: center;
+        align-items: center;
+        font-size: 4rem;
         margin: 3rem 0;
         transform: translateX(-20rem);
         transition: .25s ease;
